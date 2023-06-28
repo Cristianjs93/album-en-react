@@ -1,0 +1,11 @@
+.corazon {
+  padding: 5px;
+  color: black;
+}
+
+.corazon--relleno {
+  /* border: 1px solid red; Cambia el color y el estilo del borde según tus necesidades */
+  padding: 5px; /* Ajusta el relleno según tus necesidades */
+  color: red;
+  font-size: 35px;
+}

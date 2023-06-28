@@ -1,0 +1,117 @@
+html,
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: row;
+}
+.box-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.box {
+  width: 480px;
+  height: 200px;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  border-radius: 20px;
+  justify-content: flex-start;
+  margin: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
+  box-shadow: 7px 7px 8px -5px rgba(204, 204, 204, 1);
+  font-family: "Nunito", sans-serif;
+}
+
+.box__img {
+  width: 100%;
+  height: 100%;
+  grid-column: 1/2;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.box__content {
+  width: calc(100%-15px);
+  height: 200px;
+  grid-column: 2/3;
+  margin-left: 15px;
+}
+
+.box__content__name {
+  margin: 3px;
+  margin-bottom: -5px;
+  margin-top: 15px;
+  font-weight: 800;
+  font-size: 24px;
+}
+.box__content__artist {
+  margin: 3px;
+  margin-top: -5px;
+  margin-bottom: 20px;
+  color: rgb(107, 106, 106);
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 400;
+}
+.box__content__album {
+  font-size: 16px;
+  color: rgb(107, 106, 106);
+
+  margin: 3px;
+}
+.box__content__year {
+  font-size: 14px;
+  color: rgb(107, 106, 106);
+  font-weight: 400;
+  margin: 0;
+}
+
+.box__bottom {
+  height: 50px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  margin-top: 20px;
+}
+
+.box__bottom__genre__span {
+  display: flex;
+  background-color: rgb(251, 199, 199);
+  text-align: center;
+  width: 100%;
+  height: 25px;
+  border-radius: 10px;
+  padding-left: 15px;
+  align-items: center;
+}
+
+/* .box__bottom__genre__span {
+  position: relative;
+  display: inline;
+}
+
+.box__bottom__genre__span::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 100%;
+  background-color: rgb(255, 183, 183);
+  border-radius: 10px;
+  z-index: -1;
+  text-align: center;
+} */
